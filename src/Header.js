@@ -1,12 +1,18 @@
 import React from 'react';
+import './Header.css';
+
+
 
 // This is a Functional Component
 
 const Header = function () {
+
+
+
     return (
-        <div style={{textAlign: 'center', padding:20, background: '#000' , color:'#FFF' , textTransform:'uppercase'}}>
+        <div className="Header">
          
-            Phone Directory
+            March Assist
          
         </div>
     )
