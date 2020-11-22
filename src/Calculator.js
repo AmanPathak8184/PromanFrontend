@@ -8,7 +8,7 @@ const Calculator = function () {
 
         <Container fluid>
 
-         
+         1
 
             <Row id="Resources">
                 <Col id="FoodBlock">
