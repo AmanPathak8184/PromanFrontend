@@ -1,0 +1,38 @@
+.ResourcesBlock{
+
+   
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+
+}
+
+#StatsBlock{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border: 2px solid red;
+}
+
+#TroopsBlock{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border: 2px solid red;
+}
+.border1{
+    margin-top: 10px;
+    border: 2px solid red;
+    text-align: start;
+    padding: 1%;
+   
+}
+
+.customInput {
+    text-decoration: none;
+}
+
+.SectionBorder{
+    border: 2px solid green;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

@@ -1,0 +1,13 @@
+.ResourcesBlock{
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+
+}
+
+.border12{
+    margin-top: 10px;
+    border: 2px solid red;
+    text-align: start;
+
+}
