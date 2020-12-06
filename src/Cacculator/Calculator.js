@@ -392,7 +392,7 @@ Faction 1
 <input type="number" className="customInput" onChange={this.Faction1Handler.bind(this)}/>
 </Col>
 <Col className="border1"> 
-Faction 2
+Faction 2 Test
 <input type="number" className="customInput" onChange={this.Faction2Handler.bind(this)}/>
 </Col>
 
@@ -400,7 +400,7 @@ Faction 2
 </Row>
 
 </div>
-            <div className="SectionBorder">
+            <div className="SectionBorder"> 
             <Button onClick={() => this.CalculateHandler()}> Test </Button>
             </div>
        </div>
