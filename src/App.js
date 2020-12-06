@@ -10,7 +10,7 @@ function App() {
 
   return (
 
-    <div id="Test">
+    <div className="Test">
 
       <Header />
       <Calculator heading="Hello This Is Prop" />

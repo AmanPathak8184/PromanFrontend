@@ -170,7 +170,7 @@ class Calculator extends Component {
 
 
     Faction2MightGained = 0;
-    Faction2MusterScore = 0;
+    FactionMusterScore = 0;
 
     //#endregion
 
@@ -397,7 +397,25 @@ class Calculator extends Component {
         return (
             <div>
 
-                <div >
+                <Container fluid >
+
+             
+
+                    <Row className="Calculate">
+                        <Col className="BlackText" lg={8} xs={6}>
+                        Resources
+                        </Col>
+                    <Col lg={2} xs={3}>
+                    <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
+                    </Col>
+                    <Col lg={2} xs={3}>
+                    <button className="ResetBtn" onClick={() => this.CalculateHandler()}> RESET </button>
+                    </Col>
+                    </Row>
+
+              
+                </Container>
+             
                     <Resources
                         FoodAmount={this.state.Food}
                         WoodAmount={this.state.Wood}
@@ -406,55 +424,47 @@ class Calculator extends Component {
                         SilverAmount={this.state.Silver}
                     />
 
-                </div>
+            
 
-                <div className="SectionBorder">
+                    <Container fluid>
 
-                    This Section is For Might Gained
-
-                    <Row className="T5Units" className="justify-content-between">
-
-
-
-                        <Col className="border1">
+                    <Row  className="justify-content-between">
+                        <Col className="Box">
                             MightGained {this.state.MightGained} M
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
 
                             MusterScore {this.state.MusterScore} M
-
                         </Col>
 
-
                     </Row>
+                    </Container>
+             
 
-                </div>
-
-                <div className="SectionBorder">
-
-                    This Section is For t1
-
-            <Row className="T1Units" className="justify-content-between">
+                <Container fluid>
 
 
+            <Row  className="justify-content-between">
 
-                        <Col className="border1">
+
+
+                        <Col className="Box">
                             T1 Swordman
                 <input type="number" className="customInput" onChange={this.SwordmanT1ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T1 Spearman
                 <input type="number" className="customInput" onChange={this.SpearmanT1ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T1 Cavalry
                 <input type="number" className="customInput" onChange={this.CavalryT1ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T1 Rangers
                 <input type="number" className="customInput" onChange={this.RangersT1ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T1 Sieges
                 <input type="number" className="customInput" onChange={this.SiegesT1ChangeHandler.bind(this)} />
                         </Col>
@@ -463,33 +473,33 @@ class Calculator extends Component {
 
                     </Row>
 
-                </div>
+                    </Container>
 
-                <div className="SectionBorder">
+               <Container fluid>
 
-                    This Section is For t5
+        
 
             <Row className="T5Units" className="justify-content-between">
 
 
 
-                        <Col className="border1">
+            <Col className="Box">
                             T5 Swordman
                 <input type="number" className="customInput" onChange={this.SwordmanT5ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T5 Spearman
                 <input type="number" className="customInput" onChange={this.SpearmanT5ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T5 Cavalry
                 <input type="number" className="customInput" onChange={this.CavalryT5ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T5 Rangers
                 <input type="number" className="customInput" onChange={this.RangersT5ChangeHandler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             T5 Sieges
                 <input type="number" className="customInput" onChange={this.SiegesT5ChangeHandler.bind(this)} />
                         </Col>
@@ -498,21 +508,21 @@ class Calculator extends Component {
 
                     </Row>
 
-                </div>
+                    </Container>
 
-                <div className="SectionBorder">
+                <Container fluid>
 
-                    This Section is Factions
+                    
 
 <Row className="T5Units" className="justify-content-between">
 
 
 
-                        <Col className="border1">
+<Col className="Box">
                             Faction 1
 <input type="number" className="customInput" onChange={this.Faction1Handler.bind(this)} />
                         </Col>
-                        <Col className="border1">
+                        <Col className="Box">
                             Faction 2
 <input type="number" className="customInput" onChange={this.Faction2Handler.bind(this)} />
                         </Col>
@@ -520,10 +530,8 @@ class Calculator extends Component {
 
                     </Row>
 
-                </div>
-                <div className="SectionBorder">
-                    <Button onClick={() => this.CalculateHandler()}> Test </Button>
-                </div>
+                    </Container>
+               
             </div>
         )
 

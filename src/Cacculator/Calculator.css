@@ -1,4 +1,40 @@
 
+.Calculate{
+    background-color: #FFF;
+    padding: 1%;
+    margin-top: 1%;
+     border-radius: 10px;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.BlackText{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #616161;
+}
+
+.CalculateBtn{
+    background-color:rgb(24, 167, 233);
+    border: 2px solid rgb(24, 167, 233);
+    border-radius: 5px;
+    padding: 3% 5%;
+    color: #FFF;
+    font-weight: bolder;
+    width: 120px;
+
+   
+}
+
+.ResetBtn{
+    background-color:transparent;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 3% 5%;
+    color:red;
+    font-weight: bolder;
+    width: 120px;
+   
+}
 
 #StatsBlock{
     margin-top: 2%;
@@ -30,3 +66,93 @@
 
 }
 
+
+.Box{
+    background-color:rgb(24, 167, 233);
+    color: #FFF;
+    border-radius: 10px;
+    padding: 1%;
+    text-align: left;
+    font-weight: bold;  
+    
+ 
+    margin: 1%;
+}
+
+.NumberBlock{
+    font-size: 30px;
+   text-align: left;       
+}
+
+
+
+
+.NameBlock{
+    font-size: 15px;
+    
+   
+}
+
+
+
+
+
+@media (max-width:500px){
+   
+    .NumberBlock{
+        padding: 0%;
+        font-size: 14px;
+     
+       
+    }
+    .NameBlock{
+        font-size: 7px;
+    }
+
+    .ResourcesButton{
+       
+        border-radius: 5px;
+       
+    }
+
+    .Calculate{
+        background-color: #FFF;
+        padding: 1%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+         border-radius: 5px;
+         margin-left: 0%;
+       
+    }
+
+    .BlackText{
+        font-size: 15px;
+        font-weight: bolder;
+        color: #616161;
+    }
+
+    .CalculateBtn{
+       
+        border-radius: 5px;
+        padding: 3% 5%;
+        color: #FFF;
+        font-size: 10px;
+        font-weight: bolder;
+        width:70px;
+        
+       
+    }
+    
+    .ResetBtn{
+     
+        border-radius: 5px;
+        padding: 3% 5%;
+        color:red;
+        font-size: 10px;
+        font-weight: bolder;
+        width: 70px;
+      
+       
+    }
+
+}
