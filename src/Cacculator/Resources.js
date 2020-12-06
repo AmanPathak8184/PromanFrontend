@@ -4,68 +4,68 @@ import './Resources.css'
 
 const Resources = function (props) {
     return (
-        <Container fluid>
+        <Container fluid className="ResourcesBox" >
 
-            <Row className="justify-content-between">
-                <span> Resources Needed</span>
-            </Row>
-
+    
             <Row id="Resources" className="justify-content-between" >
 
-                <Col className="border12" className="ResourcesBlock" xs={5}>
-
-                    <div className="border12">
-
-                        Food: {parseFloat((props.FoodAmount) / 1000000000).toFixed(2)} B
-
-                      
-
-                    </div>
-
-                </Col>
-                <Col className="border12" className="ResourcesBlock" xs={5}>
-
-                    <div className="border12">
-
-                        Wood: {parseFloat((props.WoodAmount) / 1000000000).toFixed(2)} B
-
-                    </div>
-
+                <Col className="ResourcesButton"  xs={3} lg={2}>
+                        <Row>
+                            <Col  className="NumberBlock" xs={12} lg={12}>
+                            {parseFloat((props.FoodAmount) / 1000000000).toFixed(2)}   BN
+                            </Col >
+                        </Row>
+                        <Row >
+                         <Col className="NameBlock">Food</Col>
+                        </Row>
                 </Col>
 
-                <Col className="border12" className="ResourcesBlock" xs={5}>
 
-                    <div className="border12">
-
-                        Stone: {parseFloat((props.StoneAmount) / 1000000000).toFixed(2)} B
-
-    </div>
-
+                <Col className="ResourcesButton"  xs={3} lg={2}>
+                        <Row>
+                            <Col  className="NumberBlock" xs={12} lg={12}>
+                            {parseFloat((props.WoodAmount) / 1000000000).toFixed(2)}   BN
+                            </Col >
+                        </Row>
+                        <Row >
+                         <Col className="NameBlock">Wood</Col>
+                        </Row>
                 </Col>
 
-                <Col className="border12" className="ResourcesBlock" xs={5}>
-
-                    <div className="border12">
-
-                        Iron: {parseFloat((props.IronAmount) / 1000000000).toFixed(2)} B
-
-    </div>
-
+                <Col className="ResourcesButton"  xs={3} lg={2}>
+                        <Row>
+                            <Col  className="NumberBlock" xs={12} lg={12}>
+                            {parseFloat((props.StoneAmount) / 1000000000).toFixed(2)}   BN
+                            </Col >
+                        </Row>
+                        <Row >
+                         <Col className="NameBlock">Stone</Col>
+                        </Row>
                 </Col>
 
-                <Col className="border12" className="ResourcesBlock" xs={5}>
-
-                    <div className="border12">
-
-                        Silver: {parseFloat((props.SilverAmount) / 1000000000).toFixed(2)} B
-
-    </div>
-
+                <Col className="ResourcesButton"  xs={3} lg={2}>
+                        <Row>
+                            <Col  className="NumberBlock" xs={12} lg={12}>
+                            {parseFloat((props.IronAmount) / 1000000000).toFixed(2)}   BN
+                            </Col >
+                        </Row>
+                        <Row >
+                         <Col className="NameBlock">Iron</Col>
+                        </Row>
+                </Col>
+                <Col className="ResourcesButton"  xs={4} lg={2}>
+                        <Row>
+                            <Col  className="NumberBlock" xs={6} lg={12}>
+                            {parseFloat((props.SilverAmount) / 1000000000).toFixed(2)}   BN
+                            </Col >
+                        </Row>
+                        <Row >
+                         <Col className="NameBlock">Silver</Col>
+                        </Row>
                 </Col>
 
 
             </Row>
-
 
         </Container>
     )

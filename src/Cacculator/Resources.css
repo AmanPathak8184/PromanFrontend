@@ -1,13 +1,44 @@
-.ResourcesBlock{
-    margin-right: 1%;
-    margin-left: 1%;
-    margin-top: 1%;
 
+
+.ResourcesButton{
+    background-color:rgb(24, 167, 233);
+    color: #FFF;
+    border-radius: 10px;
+    padding: 1%;
+    text-align: left;
+    font-weight: bold;  
+
+    margin: 1%;
 }
 
-.border12{
-    margin-top: 10px;
-    border: 2px solid red;
-    text-align: start;
+.NumberBlock{
+    font-size: 30px;
+   text-align: left;       
+}
 
+
+
+
+.NameBlock{
+    font-size: 15px;
+    
+   
+}
+
+
+
+
+@media (max-width:400px){
+   
+    .NumberBlock{
+        padding: 0%;
+        font-size: 14px;
+     
+       
+    }
+    .NameBlock{
+        font-size: 7px;
+        
+       
+    }
 }
