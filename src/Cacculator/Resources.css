@@ -7,7 +7,7 @@
     padding: 1%;
     text-align: left;
     font-weight: bold;  
-
+ 
     margin: 1%;
 }
 
@@ -38,7 +38,12 @@
     }
     .NameBlock{
         font-size: 7px;
-        
+    }
+
+    .ResourcesButton{
+       
+        border-radius: 5px;
        
     }
+
 }
