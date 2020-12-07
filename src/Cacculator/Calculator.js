@@ -421,7 +421,7 @@ class Calculator extends Component {
                 <Container fluid >
                     <Row className="Calculate align-items-center">
                         <Col className="BlackText" lg={8} xs={6}>
-                            Resources Test 11
+                            Resources Test 12
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
@@ -447,24 +447,30 @@ class Calculator extends Component {
                   
                                 <Col xs={8}>
 
-                                    <div className="border1">
-                                      
-                                            <Row className="justify-content-between">
-                                            <Col className="Box align-items-center" xs={5} >
-                                            
-                                        Might Gained {this.state.MightGained} M
-                                       
-                                            </Col>
+                                  
+                                <Row className="justify-content-between "> 
+                                     <Col className="MightGained align-items-center" xs={5}> 
+                                        <Row className="justify-content-center ">
+                                         MightGained
+                                        </Row>
+                                        <Row className="justify-content-center">
+                                         {this.state.MightGained} M
+                                        </Row>
 
-                                            <Col className="Box" xs={5}>
-
-                                                MusterScore {this.state.MusterScore} M
-                                            </Col>
-                                            </Row>
-                                       
-                                   </div>
-
+                                    </Col>
+                                   
+                                    <Col className="MightGained align-items-center" xs={5}> 
+                                    <Row className="justify-content-center ">
+                                         Muster Score
+                                        </Row>
+                                        <Row className="justify-content-center">
+                                         {this.state.MusterScore} M
+                                        </Row>
+                                    </Col>
+                                 </Row>
+                                  
                                 </Col>
+                                
                             </Row>
 
                     </Container>
@@ -474,19 +480,7 @@ class Calculator extends Component {
 
 
 
-                <Container fluid>
-
-                    <Row className="justify-content-between">
-                        <Col className="Box">
-                            MightGained {this.state.MightGained} M
-                        </Col>
-                        <Col className="Box">
-
-                            MusterScore {this.state.MusterScore} M
-                        </Col>
-
-                    </Row>
-                </Container>
+                
 
 
                 <Container fluid>
@@ -562,7 +556,7 @@ class Calculator extends Component {
 
 
 
-                    <Row className="T5Units" className="justify-content-between">
+                    <Row className="T5Units" className="justify-content-start">
 
 
 

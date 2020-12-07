@@ -52,10 +52,10 @@
     border: 2px solid red;
 }
 .border1{
-    margin-top: 10px;
+  
     border: 2px solid red;
-    text-align: start;
-    padding: 1%;
+   
+  
    
 }
 
@@ -103,21 +103,7 @@
 
 @media (max-width:500px){
    
-    .NumberBlock{
-        padding: 0%;
-        font-size: 14px;
-     
-       
-    }
-    .NameBlock{
-        font-size: 7px;
-    }
-
-    .ResourcesButton{
-       
-        border-radius: 5px;
-       
-    }
+    
 
     .Calculate{
         background-color: #FFF;
@@ -185,6 +171,16 @@
     .NameBlock{
         font-size: 15px;
         
+       
+    }
+
+    .MightGained{
+        background-color:rgb(24, 167, 233);
+        border-radius: 5px;
+        font-size: 12px;
+        color: #FFF;
+        font-weight: bold;
+        padding: 5% ;
        
     }
 
