@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React, { Component } from 'react';
-import { Button, Col, Container, Form, FormControl, InputGroup, Row, } from 'react-bootstrap';
+import { Button, Col, Container, Form, FormControl, InputGroup, Jumbotron, Row, } from 'react-bootstrap';
 import './Calculator.css';
 import Resources from './Resources';
 
@@ -379,13 +379,13 @@ class Calculator extends Component {
                     + this.T5SwordSilver + this.T5SpearSilver + this.T5CavalrySilver + this.T5RangersSilver + this.T5SiegesSilver),
 
             MightGained:
-             (this.T1SwordMightGained+this.T1SpearMightGained+this.T1CavalryMightGained+this.T1RangersMightGained+this.T1SiegesMightGained
-                +this.Faction1MightGained+this.Faction2MightGained
-                +this.T5SwordMightGained+this.T5SpearMightGained+this.T5CavalryMightGained+this.T5RangersMightGained+this.T5SiegesMightGained),
+                (this.T1SwordMightGained + this.T1SpearMightGained + this.T1CavalryMightGained + this.T1RangersMightGained + this.T1SiegesMightGained
+                    + this.Faction1MightGained + this.Faction2MightGained
+                    + this.T5SwordMightGained + this.T5SpearMightGained + this.T5CavalryMightGained + this.T5RangersMightGained + this.T5SiegesMightGained),
             MusterScore:
-            (this.T1SwordMusterScore+this.T1SpearMusterScore+this.T1CavalryMusterScore+this.T1RangersMusterScore+this.T1SiegesMusterScore
-                +this.Faction1MusterScore+this.Faction2MusterScore
-                +this.T5SwordMusterScore+this.T5SpearMusterScore+this.T5CavalryMusterScore+this.T5RangersMusterScore+this.T5SiegesMusterScore)
+                (this.T1SwordMusterScore + this.T1SpearMusterScore + this.T1CavalryMusterScore + this.T1RangersMusterScore + this.T1SiegesMusterScore
+                    + this.Faction1MusterScore + this.Faction2MusterScore
+                    + this.T5SwordMusterScore + this.T5SpearMusterScore + this.T5CavalryMusterScore + this.T5RangersMusterScore + this.T5SiegesMusterScore)
         })
     }
 
@@ -395,7 +395,7 @@ class Calculator extends Component {
 
     handleReset = () => {
         Array.from(document.querySelectorAll("input")).forEach(
-          input => (input.value = "")
+            input => (input.value = "")
         );
         this.setState({
             Food: 0,
@@ -406,7 +406,7 @@ class Calculator extends Component {
             MightGained: 0,
             MusterScore: 0
         });
-      };
+    };
 
     //#endregion
 
@@ -421,40 +421,62 @@ class Calculator extends Component {
                 <Container fluid >
                     <Row className="Calculate">
                         <Col className="BlackText" lg={8} xs={6}>
-                        Resources
+                            Resources
                         </Col>
-                    <Col lg={2} xs={3}>
-                    <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
-                    </Col>
-                    <Col lg={2} xs={3}>
-                    <button className="ResetBtn" onClick={() => this.handleReset()}> RESET </button>
-                    </Col>
+                        <Col lg={2} xs={3}>
+                            <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
+                        </Col>
+                        <Col lg={2} xs={3}>
+                            <button className="ResetBtn" onClick={() => this.handleReset()}> RESET </button>
+                        </Col>
                     </Row>
 
-                    <Container> 
-                        <Row>
-                            <Col lg={3}>
-                            </Col>
+                    <Container fluid>
+                    
+                            <Row>
+                         
+                                <Col xs={4} >
+                                    <Resources
+                                        FoodAmount={this.state.Food}
+                                        WoodAmount={this.state.Wood}
+                                        StoneAmount={this.state.Stone}
+                                        IronAmount={this.state.Iron}
+                                        SilverAmount={this.state.Silver}
+                                    />
+                                </Col>
+                  
+                                <Col xs={8}>
 
-                            <Col>
-                            </Col>
-                        </Row>
+                                    <div className="border1">
+                                      
+                                            <Row className="justify-content-between">
+                                            <Col className="Box align-items-center" xs={5} >
+                                            
+                                        Might Gained {this.state.MightGained} M
+                                       
+                                            </Col>
+
+                                            <Col className="Box" xs={5}>
+
+                                                MusterScore {this.state.MusterScore} M
+                                            </Col>
+                                            </Row>
+                                       
+                                   </div>
+
+                                </Col>
+                            </Row>
+
                     </Container>
                 </Container>
-             
-                    <Resources
-                        FoodAmount={this.state.Food}
-                        WoodAmount={this.state.Wood}
-                        StoneAmount={this.state.Stone}
-                        IronAmount={this.state.Iron}
-                        SilverAmount={this.state.Silver}
-                    />
 
-            
 
-                    <Container fluid>
 
-                    <Row  className="justify-content-between">
+
+
+                <Container fluid>
+
+                    <Row className="justify-content-between">
                         <Col className="Box">
                             MightGained {this.state.MightGained} M
                         </Col>
@@ -464,13 +486,13 @@ class Calculator extends Component {
                         </Col>
 
                     </Row>
-                    </Container>
-             
+                </Container>
+
 
                 <Container fluid>
 
 
-            <Row  className="justify-content-between">
+                    <Row className="justify-content-between">
 
 
 
@@ -499,17 +521,17 @@ class Calculator extends Component {
 
                     </Row>
 
-                    </Container>
+                </Container>
 
-               <Container fluid>
-
-        
-
-            <Row className="T5Units" className="justify-content-between">
+                <Container fluid>
 
 
 
-            <Col className="Box">
+                    <Row className="T5Units" className="justify-content-between">
+
+
+
+                        <Col className="Box">
                             T5 Swordman
                 <input type="number" className="customInput" onChange={this.SwordmanT5ChangeHandler.bind(this)} />
                         </Col>
@@ -534,17 +556,17 @@ class Calculator extends Component {
 
                     </Row>
 
-                    </Container>
+                </Container>
 
                 <Container fluid>
 
-                    
-
-<Row className="T5Units" className="justify-content-between">
 
 
+                    <Row className="T5Units" className="justify-content-between">
 
-<Col className="Box">
+
+
+                        <Col className="Box">
                             Faction 1
 <input type="number" className="customInput" onChange={this.Faction1Handler.bind(this)} />
                         </Col>
@@ -556,8 +578,8 @@ class Calculator extends Component {
 
                     </Row>
 
-                    </Container>
-               
+                </Container>
+
             </div>
         )
 

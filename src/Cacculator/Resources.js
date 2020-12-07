@@ -4,14 +4,15 @@ import './Resources.css'
 
 const Resources = function (props) {
     return (
-        <Container fluid className="ResourcesBox" >
+        <Container fluid  >
 
-    
-            <Row id="Resources" className="justify-content-between" >
+               
 
-                <Col className="ResourcesButton"  xs={3} lg={2}>
+            <Row>
+
+                <Col className="ResourcesButton "  xs={12} lg={2}>
                         <Row>
-                            <Col  className="NumberBlock" xs={12} lg={12}>
+                            <Col  className="NumberBlock  " xs={12} lg={12}>
                             {parseFloat((props.FoodAmount) / 1000000000).toFixed(2)}   BN
                             </Col >
                         </Row>
@@ -21,7 +22,7 @@ const Resources = function (props) {
                 </Col>
 
 
-                <Col className="ResourcesButton"  xs={3} lg={2}>
+                <Col className="ResourcesButton"  xs={12} lg={2}>
                         <Row>
                             <Col  className="NumberBlock" xs={12} lg={12}>
                             {parseFloat((props.WoodAmount) / 1000000000).toFixed(2)}   BN
@@ -32,7 +33,7 @@ const Resources = function (props) {
                         </Row>
                 </Col>
 
-                <Col className="ResourcesButton"  xs={3} lg={2}>
+                <Col className="ResourcesButton"  xs={12} lg={2}>
                         <Row>
                             <Col  className="NumberBlock" xs={12} lg={12}>
                             {parseFloat((props.StoneAmount) / 1000000000).toFixed(2)}   BN
@@ -43,7 +44,7 @@ const Resources = function (props) {
                         </Row>
                 </Col>
 
-                <Col className="ResourcesButton"  xs={3} lg={2}>
+                <Col className="ResourcesButton"  xs={12} lg={2}>
                         <Row>
                             <Col  className="NumberBlock" xs={12} lg={12}>
                             {parseFloat((props.IronAmount) / 1000000000).toFixed(2)}   BN
@@ -53,7 +54,7 @@ const Resources = function (props) {
                          <Col className="NameBlock">Iron</Col>
                         </Row>
                 </Col>
-                <Col className="ResourcesButton"  xs={3} lg={2}>
+                <Col className="ResourcesButton"  xs={12} lg={2}>
                         <Row>
                             <Col  className="NumberBlock" xs={12} lg={12}>
                             {parseFloat((props.SilverAmount) / 1000000000).toFixed(2)}   BN
