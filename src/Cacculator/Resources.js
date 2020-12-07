@@ -11,13 +11,11 @@ const Resources = function (props) {
             <Row>
 
                 <Col className="ResourcesButton border1"  xs={12} lg={2}>
-                        <Row>
-                            <Col  className="NumberBlock  " xs={12} lg={12}>
+                        <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.FoodAmount) / 1000000000).toFixed(2)}   BN
-                            </Col >
                         </Row>
-                        <Row >
-                         <Col className="NameBlock">Food</Col>
+                        <Row className="NameBlock justify-content-center">
+                         Food
                         </Row>
                 </Col>
 
