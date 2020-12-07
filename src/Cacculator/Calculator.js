@@ -413,16 +413,13 @@ class Calculator extends Component {
     render() {
         return (
             <div>
-
-
-
-
-
                 <Container fluid >
                   
+               
+
                     <Row className="align-items-center CalculateBlock WhiteBlock">
                         <Col className="FontSizeBig" lg={8} xs={6}>
-                            Resources Test 19
+                            Resources Test 20
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateButton BlueBlock FontSizeMedium  " onClick={() => this.CalculateHandler()}> CALCULATE </button>
@@ -431,11 +428,15 @@ class Calculator extends Component {
                             <button className="ResetButton" onClick={() => this.handleReset()}> RESET </button>
                         </Col>
                     </Row>
-                
+           
                     <Container fluid>
-                    
+
+                          
+
                             <Row className="justify-content-between">
                          
+                           
+
                                 <Col xs={4}  className="WhiteBlock ResourcesBlock">
                                     <Resources
                                         FoodAmount={this.state.Food}
@@ -445,34 +446,43 @@ class Calculator extends Component {
                                         SilverAmount={this.state.Silver}
                                     />
                                 </Col>
-                  
-                                <Col xs={7}>
-
+                         
+                               
+                               
+             <Col xs={7}>
                                   
-                                <Row className="justify-content-between WhiteBlock"> 
-                                     <Col className="MightGained OrangeBlock align-items-center" xs={5}> 
-                                        <Row className="justify-content-center FontSize ">
-                                         Might Gained
-                                        </Row>
-                                        <Row className="justify-content-center FontSize">
+                 <Row className="justify-content-between WhiteBlock ResultBlock"> 
+
+                        <Col className="ResultSubBlock OrangeBlock align-items-center" xs={5}> 
+
+                               <Row className="justify-content-center FontSizeBig">
                                          {this.state.MightGained} M
-                                        </Row>
+                               </Row>
 
-                                    </Col>
-                                   
-                                    <Col className="MightGained OrangeBlock align-items-center" xs={5}> 
-                                    <Row className="justify-content-center FontSize ">
-                                         Muster Score
-                                        </Row>
-                                        <Row className="justify-content-center FontSize">
+                              <Row className="justify-content-center FontSizeSmall ">
+                                         Might Gained
+                              </Row>
+
+                         </Col>
+
+                         <Col className="ResultSubBlock OrangeBlock align-items-center" xs={5}> 
+
+                               <Row className="justify-content-center FontSizeBig">
                                          {this.state.MusterScore} M
-                                        </Row>
-                                    </Col>
-                                 </Row>
+                               </Row>
+
+                              <Row className="justify-content-center FontSizeSmall ">
+                                        Muster Score
+                              </Row>
+
+                         </Col>
+                                   
                                   
-                                </Col>
+                      </Row>
                                 
-                            </Row>
+                 </Col>
+                                
+             </Row>
 
                     </Container>
                 </Container>
