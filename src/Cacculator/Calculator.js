@@ -421,7 +421,7 @@ class Calculator extends Component {
                 <Container fluid >
                     <Row className="Calculate">
                         <Col className="BlackText" lg={8} xs={6}>
-                            Resources
+                            Resources Test 5
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
