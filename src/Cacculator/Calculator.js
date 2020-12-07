@@ -420,7 +420,7 @@ class Calculator extends Component {
 
     <Row className="align-items-center CalculateBlock WhiteBlock">
                         <Col className="FontSizeBig" lg={8} xs={6}>
-                            Resources Test 23
+                            Resources Test 24
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateButton BlueBlock FontSizeMedium  " onClick={() => this.CalculateHandler()}> CALCULATE </button>
@@ -563,57 +563,62 @@ class Calculator extends Component {
                         </Col>
 
               </Row>
-        </Container>
+
+                              <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                              Tier 5 Units
+                            </Row>
+
+                         <Row className="WhiteBlock Tier1Block justify-content-between ">
+
+                               <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.SwordmanT5ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Swords
+                            </Row>
+                        </Col>
+
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.SpearmanT5ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Spears
+                            </Row>
+                        </Col>
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.CavalryT5ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Cavalry
+                            </Row>
+                        </Col>
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.RangersT5ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                               Rangers
+                            </Row>
+                        </Col>
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.SiegesT5ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Sieges
+                            </Row>
+                        </Col>
+
+              </Row>
+
+              </Container>
 
 
 
  </Container>
-
-
-
-
-
-                
-
-
-  
-
-                <Container fluid>
-
-
-
-                    <Row className="T5Units" className="justify-content-between">
-
-
-
-                        <Col className="Box">
-                            T5 Swordman
-                <input type="number" className="customInput" onChange={this.SwordmanT5ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T5 Spearman
-                <input type="number" className="customInput" onChange={this.SpearmanT5ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T5 Cavalry
-                <input type="number" className="customInput" onChange={this.CavalryT5ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T5 Rangers
-                <input type="number" className="customInput" onChange={this.RangersT5ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T5 Sieges
-                <input type="number" className="customInput" onChange={this.SiegesT5ChangeHandler.bind(this)} />
-                        </Col>
-
-
-
-                    </Row>
-
-                </Container>
-
-               
 
             </div>
         )
