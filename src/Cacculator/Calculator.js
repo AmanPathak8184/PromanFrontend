@@ -7,6 +7,7 @@ import Resources from './Resources';
 
 
 class Calculator extends Component {
+  
 
     constructor() {
         super()
@@ -18,7 +19,12 @@ class Calculator extends Component {
             Silver: 0,
             MightGained: 0,
             MusterScore: 0
+            
         }
+
+
+
+        
 
     }
 
@@ -27,7 +33,7 @@ class Calculator extends Component {
 
     // SwordMan
 
-    T1SwordFood = 0;
+     T1SwordFood = 0;
     T1SwordWood = 0;
     T1SwordStone = 0;
     T1SwordIron = 0;
@@ -397,6 +403,9 @@ class Calculator extends Component {
         Array.from(document.querySelectorAll("input")).forEach(
             input => (input.value = "")
         );
+
+    
+
         this.setState({
             Food: 0,
             Wood: 0,
@@ -406,11 +415,166 @@ class Calculator extends Component {
             MightGained: 0,
             MusterScore: 0
         });
+      
+         //#region T1 Variables
+
+    // SwordMan
+
+     this.T1SwordFood = 0;
+     this.T1SwordWood = 0;
+     this.T1SwordStone = 0;
+     this.T1SwordIron = 0;
+     this.T1SwordSilver = 0;
+ 
+     this.T1SwordMightGained = 0;
+     this.T1SwordMusterScore = 0;
+ 
+     // SpearMan
+ 
+     this.T1SpearFood = 0;
+     this.T1SpearWood = 0;
+     this.T1SpearStone = 0;
+     this.T1SpearIron = 0;
+     this.T1SpearSilver = 0;
+ 
+     this.T1SpearMightGained = 0;
+     this.T1SpearMusterScore = 0;
+ 
+     // Cavalry
+ 
+     this.T1CavalryFood = 0;
+     this.T1CavalryWood = 0;
+     this.T1CavalryStone = 0;
+     this.T1CavalryIron = 0;
+     this.T1CavalrySilver = 0;
+ 
+     this.T1CavalryMightGained = 0;
+     this.T1CavalryMusterScore = 0;
+ 
+     // Rangers
+ 
+     this.T1RangersFood = 0;
+     this.T1RangersWood = 0;
+     this.T1RangersStone = 0;
+     this.T1RangersIron = 0;
+     this.T1RangersSilver = 0;
+ 
+     this.T1RangersMightGained = 0;
+     this.T1RangersMusterScore = 0;
+ 
+     // Sieges
+ 
+     this.T1SiegesFood = 0;
+     this.T1SiegesWood = 0;
+     this.T1SiegesStone = 0;
+     this.T1SiegesIron = 0;
+     this.T1SiegesSilver = 0;
+ 
+     this.T1SiegesMightGained = 0;
+     this.T1SiegesMusterScore = 0;
+ 
+ 
+     //#endregion
+ 
+     //#region T5 Variables
+ 
+     // SwordMan
+ 
+     this.T5SwordFood = 0;
+     this.T5SwordWood = 0;
+     this.T5SwordStone = 0;
+     this.T5SwordIron = 0;
+     this.T5SwordSilver = 0;
+ 
+     this.T5SwordMightGained = 0;
+     this.T5SwordMusterScore = 0;
+ 
+     // SpearMan
+ 
+     this.T5SpearFood = 0;
+     this.T5SpearWood = 0;
+     this.T5SpearStone = 0;
+     this.T5SpearIron = 0;
+     this.T5SpearSilver = 0;
+ 
+     this.T5SpearMightGained = 0;
+     this.T5SpearMusterScore = 0;
+ 
+     // Cavalry
+ 
+     this.T5CavalryFood = 0;
+     this.T5CavalryWood = 0;
+     this.T5CavalryStone = 0;
+     this.T5CavalryIron = 0;
+     this.T5CavalrySilver = 0;
+ 
+ 
+     this.T5CavalryMightGained = 0;
+     this.T5CavalryMusterScore = 0;
+ 
+     // Rangers
+ 
+     this.T5RangersFood = 0;
+     this.T5RangersWood = 0;
+     this.T5RangersStone = 0;
+     this.T5RangersIron = 0;
+     this.T5RangersSilver = 0;
+ 
+ 
+     this.T5RangersMightGained = 0;
+     this.T5RangersMusterScore = 0;
+ 
+     // Sieges
+ 
+     this.T5SiegesFood = 0;
+     this.T5SiegesWood = 0;
+     this.T5SiegesStone = 0;
+     this.T5SiegesIron = 0;
+     this.T5SiegesSilver = 0;
+ 
+ 
+     this.T5SiegesMightGained = 0;
+     this.T5SiegesMusterScore = 0;
+ 
+ 
+     //#endregion
+ 
+     //#region Faction Variables
+ 
+     // Faction1
+ 
+     this.Faction1Food = 0
+     this.Faction1Wood = 0
+     this.Faction1Stone = 0
+     this.Faction1Iron = 0
+     this.Faction1Silver = 0
+ 
+ 
+     this.Faction1MightGained = 0;
+     this.Faction1MusterScore = 0;
+ 
+     // Faction2
+ 
+     this.Faction2Food = 0
+     this.Faction2Wood = 0
+     this.Faction2Stone = 0
+     this.Faction2Iron = 0
+     this.Faction2Silver = 0
+ 
+ 
+     this.Faction2MightGained = 0;
+     this.Faction2MusterScore = 0;
+ 
+     //#endregion
+        
     };
 
     //#endregion
 
     render() {
+
+        
+
         return (
             <div>
                 
@@ -420,7 +584,7 @@ class Calculator extends Component {
 
     <Row className="align-items-center CalculateBlock WhiteBlock">
                         <Col className="FontSizeBig" lg={8} xs={6}>
-                            Resources Test 24
+                            Resources Test 25
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateButton BlueBlock FontSizeMedium  " onClick={() => this.CalculateHandler()}> CALCULATE </button>
