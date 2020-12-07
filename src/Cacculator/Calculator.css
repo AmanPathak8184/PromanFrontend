@@ -1,4 +1,10 @@
 
+.OrangeBlock{
+    background-color:#EFA32F;
+    color: #FFF;
+    font-weight: bold;
+  }
+
 .Calculate{
     background-color: #FFF;
     padding: 1%;
@@ -14,8 +20,8 @@
 }
 
 .CalculateBtn{
-    background-color:rgb(24, 167, 233);
-    border: 2px solid rgb(24, 167, 233);
+    background-color:#2F4048;
+    border: 2px solid #2F4048;
     border-radius: 5px;
     padding: 3% 5%;
     color: #FFF;
@@ -27,10 +33,10 @@
 
 .ResetBtn{
     background-color:transparent;
-    border: 2px solid red;
+    border: 2px solid #EFA32F;
     border-radius: 5px;
     padding: 3% 5%;
-    color:red;
+    color:#EFA32F;
     font-weight: bolder;
     width: 120px;
    
@@ -139,7 +145,7 @@
      
         border-radius: 5px;
         padding: 10% 3%;
-        color:red;
+        color:#EFA32F;
         font-size: 12px;
         font-weight: bolder;
         width: 80px;
@@ -175,21 +181,32 @@
     }
 
     .MightGained{
-        background-color:rgb(24, 167, 233);
+    
         border-radius: 5px;
         font-size: 12px;
-        color: #FFF;
-        font-weight: bold;
+    
         padding: 5% ;
      
     }
 
-    .ResultBlock{
+  
+
+    .BlueBlock{
+        background-color: #2F4048;
+        padding: 5%;
+        margin-top: 1%;
+         border-radius: 10px;
+        box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 1%;
+    }
+
+    .WhiteBlock{
         background-color: #FFF;
         padding: 5%;
         margin-top: 1%;
          border-radius: 10px;
         box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 1%;
     }
 
 }

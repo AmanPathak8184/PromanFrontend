@@ -419,9 +419,9 @@ class Calculator extends Component {
 
 
                 <Container fluid >
-                    <Row className="Calculate align-items-center">
+                    <Row className="Calculate align-items-center ">
                         <Col className="BlackText" lg={8} xs={6}>
-                            Resources Test 12
+                            Resources Test 14
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
@@ -433,9 +433,9 @@ class Calculator extends Component {
 
                     <Container fluid>
                     
-                            <Row>
+                            <Row className="justify-content-between">
                          
-                                <Col xs={4} >
+                                <Col xs={4}  className="WhiteBlock ">
                                     <Resources
                                         FoodAmount={this.state.Food}
                                         WoodAmount={this.state.Wood}
@@ -445,11 +445,11 @@ class Calculator extends Component {
                                     />
                                 </Col>
                   
-                                <Col xs={8}>
+                                <Col xs={7}>
 
                                   
-                                <Row className="justify-content-between ResultBlock"> 
-                                     <Col className="MightGained align-items-center" xs={5}> 
+                                <Row className="justify-content-between WhiteBlock"> 
+                                     <Col className="MightGained OrangeBlock align-items-center" xs={5}> 
                                         <Row className="justify-content-center ">
                                          MightGained
                                         </Row>
@@ -459,7 +459,7 @@ class Calculator extends Component {
 
                                     </Col>
                                    
-                                    <Col className="MightGained align-items-center" xs={5}> 
+                                    <Col className="MightGained OrangeBlock align-items-center" xs={5}> 
                                     <Row className="justify-content-center ">
                                          Muster Score
                                         </Row>
