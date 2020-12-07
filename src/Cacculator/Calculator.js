@@ -413,13 +413,14 @@ class Calculator extends Component {
     render() {
         return (
             <div>
-                <Container fluid >
+                
+ <Container fluid >
                   
                
 
-                    <Row className="align-items-center CalculateBlock WhiteBlock">
+    <Row className="align-items-center CalculateBlock WhiteBlock">
                         <Col className="FontSizeBig" lg={8} xs={6}>
-                            Resources Test 22
+                            Resources Test 23
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateButton BlueBlock FontSizeMedium  " onClick={() => this.CalculateHandler()}> CALCULATE </button>
@@ -433,7 +434,7 @@ class Calculator extends Component {
 
                           
 
-                            <Row className="justify-content-between">
+          <Row className="justify-content-between">
                          
                            
 
@@ -445,15 +446,15 @@ class Calculator extends Component {
                                         IronAmount={this.state.Iron}
                                         SilverAmount={this.state.Silver}
                                     />
-                                </Col>
+                                 </Col>
                          
                                
                                
-         <Col xs={7} >
+                                 <Col xs={7} >
                                   
-                 <Row className="justify-content-between WhiteBlock ResultBlock"> 
+                                   <Row className="justify-content-between WhiteBlock ResultBlock"> 
 
-                        <Col className="ResultSubBlock OrangeBlock align-items-center" xs={5}> 
+                                     <Col className="ResultSubBlock OrangeBlock align-items-center" xs={5}> 
 
                                <Row className="justify-content-center FontSizeBig">
                                          {this.state.MightGained} M
@@ -478,10 +479,10 @@ class Calculator extends Component {
                          </Col>
                                    
                                   
-                      </Row>
+                                 </Row>
 
                         
-                 <Row className="justify-content-between WhiteBlock FactionBlock ">
+                           <Row className="justify-content-between WhiteBlock FactionBlock ">
 
                         <Col className="" xs={5} >
                             <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
@@ -501,15 +502,72 @@ class Calculator extends Component {
                             </Row>
                         </Col>
 
-                 </Row>     
+                           </Row>     
 
-             </Col>
+                     </Col>
                                 
-                 </Row>
+          </Row>
 
 
                     </Container>
-                </Container>
+
+
+        <Container fluid className="ForTroops">
+
+                        <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                              Tier 1 Units
+                            </Row>
+
+                <Row className="WhiteBlock Tier1Block justify-content-between ">
+                
+                <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.SwordmanT1ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Swords
+                            </Row>
+                        </Col>
+
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.SpearmanT1ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Spears
+                            </Row>
+                        </Col>
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.CavalryT1ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Cavalry
+                            </Row>
+                        </Col>
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.RangersT1ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                               Rangers
+                            </Row>
+                        </Col>
+                        <Col className="" xs={2} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox2" onChange={this.SiegesT1ChangeHandler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Sieges
+                            </Row>
+                        </Col>
+
+              </Row>
+        </Container>
+
+
+
+ </Container>
 
 
 
@@ -518,39 +576,7 @@ class Calculator extends Component {
                 
 
 
-                <Container fluid>
-
-
-                    <Row className="justify-content-between">
-
-
-
-                        <Col className="Box">
-                            T1 Swordman
-                <input type="number" className="customInput" onChange={this.SwordmanT1ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T1 Spearman
-                <input type="number" className="customInput" onChange={this.SpearmanT1ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T1 Cavalry
-                <input type="number" className="customInput" onChange={this.CavalryT1ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T1 Rangers
-                <input type="number" className="customInput" onChange={this.RangersT1ChangeHandler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            T1 Sieges
-                <input type="number" className="customInput" onChange={this.SiegesT1ChangeHandler.bind(this)} />
-                        </Col>
-
-
-
-                    </Row>
-
-                </Container>
+  
 
                 <Container fluid>
 
@@ -587,27 +613,7 @@ class Calculator extends Component {
 
                 </Container>
 
-                <Container fluid>
-
-
-
-                    <Row className="T5Units" className="justify-content-start">
-
-
-
-                        <Col className="Box">
-                            Faction 1
-<input type="number" className="customInput" onChange={this.Faction1Handler.bind(this)} />
-                        </Col>
-                        <Col className="Box">
-                            Faction 2
-<input type="number" className="customInput" onChange={this.Faction2Handler.bind(this)} />
-                        </Col>
-
-
-                    </Row>
-
-                </Container>
+               
 
             </div>
         )

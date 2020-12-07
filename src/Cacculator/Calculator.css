@@ -58,6 +58,16 @@
 
 /* #endregion */
 
+/* #region Tier1 Block */
+
+.Tier1Block{
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* #endregion */
+
 .ResourcesBlock{
 padding:3%;
 }
@@ -69,6 +79,17 @@ padding:3%;
 }
 
 .InputBox{
+    width: 140px;
+    height: 100px;
+    font-size: 50px;
+    border: none;
+    text-align: center;
+    color: #2F4048;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.InputBox2{
     width: 140px;
     height: 100px;
     font-size: 50px;
@@ -219,6 +240,16 @@ padding:3%;
 
 /* #endregion */
 
+/* #region Tier1 Block */
+
+.Tier1Block{
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* #endregion */
+
 .TroopsNameBlock{
     margin-top: 5%;
     color: #FFF;
@@ -235,6 +266,17 @@ padding:3%;
     margin-top: 10%;
     margin-bottom: 10%;
 
+}
+
+.InputBox2{
+    width: 40px;
+    height: 30px;
+    font-size: 50px;
+    border: none;
+    text-align: center;
+    color: #2F4048;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 }
@@ -324,6 +366,16 @@ padding:3%;
 
 /* #endregion */
 
+/* #region Tier1 Block */
+
+.Tier1Block{
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* #endregion */
+
 .TroopsNameBlock{
     margin-top: 5%;
     color: #FFF;
@@ -339,7 +391,18 @@ padding:3%;
     color: #2F4048;
     margin-top: 10%;
     margin-bottom: 10%;
+}
 
+
+.InputBox2{
+    width: 35px;
+    height: 25px;
+    font-size: 50px;
+    border: none;
+    text-align: center;
+    color: #2F4048;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
    }
