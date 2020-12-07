@@ -10,7 +10,7 @@ const Resources = function (props) {
 
             <Row>
 
-                <Col className="ResourcesButton "  xs={12} lg={2}>
+                <Col className="ResourcesButton border1"  xs={12} lg={2}>
                         <Row>
                             <Col  className="NumberBlock  " xs={12} lg={12}>
                             {parseFloat((props.FoodAmount) / 1000000000).toFixed(2)}   BN
