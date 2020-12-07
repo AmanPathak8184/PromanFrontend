@@ -170,7 +170,7 @@ class Calculator extends Component {
 
 
     Faction2MightGained = 0;
-    FactionMusterScore = 0;
+    Faction2MusterScore = 0;
 
     //#endregion
 
@@ -391,16 +391,34 @@ class Calculator extends Component {
 
     //#endregion
 
-    
+    //#region ResetHandler
+
+    handleReset = () => {
+        Array.from(document.querySelectorAll("input")).forEach(
+          input => (input.value = "")
+        );
+        this.setState({
+            Food: 0,
+            Wood: 0,
+            Stone: 0,
+            Iron: 0,
+            Silver: 0,
+            MightGained: 0,
+            MusterScore: 0
+        });
+      };
+
+    //#endregion
 
     render() {
         return (
             <div>
 
+
+
+
+
                 <Container fluid >
-
-             
-
                     <Row className="Calculate">
                         <Col className="BlackText" lg={8} xs={6}>
                         Resources
@@ -409,11 +427,19 @@ class Calculator extends Component {
                     <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
                     </Col>
                     <Col lg={2} xs={3}>
-                    <button className="ResetBtn" onClick={() => this.CalculateHandler()}> RESET </button>
+                    <button className="ResetBtn" onClick={() => this.handleReset()}> RESET </button>
                     </Col>
                     </Row>
 
-              
+                    <Container> 
+                        <Row>
+                            <Col lg={3}>
+                            </Col>
+
+                            <Col>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Container>
              
                     <Resources
