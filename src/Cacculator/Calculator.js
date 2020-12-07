@@ -448,7 +448,7 @@ class Calculator extends Component {
                                 <Col xs={8}>
 
                                   
-                                <Row className="justify-content-between "> 
+                                <Row className="justify-content-between ResultBlock"> 
                                      <Col className="MightGained align-items-center" xs={5}> 
                                         <Row className="justify-content-center ">
                                          MightGained

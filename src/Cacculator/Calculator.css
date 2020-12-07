@@ -181,7 +181,15 @@
         color: #FFF;
         font-weight: bold;
         padding: 5% ;
-       
+     
+    }
+
+    .ResultBlock{
+        background-color: #FFF;
+        padding: 5%;
+        margin-top: 1%;
+         border-radius: 10px;
+        box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
 }
