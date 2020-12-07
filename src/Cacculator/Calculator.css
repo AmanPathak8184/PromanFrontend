@@ -1,212 +1,212 @@
+/* #region Colors   */
+
+  .BlueColor{
+    color: #616161;
+}   
+
+/* #endregion */
+
+/* #region Blocks   */
 
 .OrangeBlock{
     background-color:#EFA32F;
-    color: #FFF;
-    font-weight: bold;
+    border-radius: 10px;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
   }
-
-.Calculate{
+  .BlueBlock{
+    background-color: #2F4048;
+     border-radius: 10px;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.WhiteBlock{
     background-color: #FFF;
-    padding: 1%;
-    margin-top: 1%;
      border-radius: 10px;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.BlackText{
-    font-size: 20px;
-    font-weight: bolder;
-    color: #616161;
+/* #endregion */
+
+/* #region Fonts */
+.FontSizeBig{
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.CalculateBtn{
-    background-color:#2F4048;
-    border: 2px solid #2F4048;
-    border-radius: 5px;
-    padding: 3% 5%;
-    color: #FFF;
-    font-weight: bolder;
-    width: 120px;
-
-   
+.FontSizeMedium{
+    font-size: 20x;
+    font-weight: bold;
 }
 
-.ResetBtn{
-    background-color:transparent;
-    border: 2px solid #EFA32F;
-    border-radius: 5px;
-    padding: 3% 5%;
-    color:#EFA32F;
-    font-weight: bolder;
-    width: 120px;
-   
+.FontSizeSmall{
+    font-size: 10px;
+    font-weight: bold;
 }
 
-.ResourcesColumn{
-    margin-left: 0;
-}
+/* #endregion */
 
-#StatsBlock{
-    margin-top: 2%;
-    margin-bottom: 1%;
-    border: 2px solid red;
-}
+/* #region CommonThings */
 
-#TroopsBlock{
-    margin-top: 2%;
-    margin-bottom: 1%;
-    border: 2px solid red;
-}
-.border1{
+
+
+.border{
   
     border: 2px solid red;
-   
-  
-   
-}
-
-.customInput {
-    text-decoration: none;
-}
-
-.SectionBorder{
-    border: 2px solid green;
-    padding: 1%;
-    margin-top: 1%;
-
-}
-
-
-.Box{
-    background-color:rgb(24, 167, 233);
-    color: #FFF;
-    border-radius: 10px;
-    padding: 1%;
-    text-align: left;
-    font-weight: bold;  
-    
  
+}
+
+/* #endregion */
+
+.ResourcesBlock{
+padding:3%;
+}
+
+/* #region Calculation Block */
+
+.CalculateBlock{
+    padding: 1%;
     margin: 1%;
 }
 
-.NumberBlock{
-    font-size: 30px;
-   text-align: left;       
+.CalculateButton{
+    padding: 5%;
+    color: #FFF;
+    width: 150px;
 }
 
-
-
-
-.NameBlock{
-    font-size: 15px;
-    
-   
+.ResetButton{
+    background-color: transparent;
+    border: 2px solid #EFA32F;
+    padding: 5%;
+    width: 150px;
+    color: #EFA32F;
+    border-radius: 10px;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-
+/* #endregion */
 
 @media (max-width:500px){
+
+    /* #region Fonts */
    
-    
-
-    .Calculate{
-        background-color: #FFF;
-        padding: 4%;
-        padding-left: 3%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-         border-radius: 5px;
-      
-       
-    }
-
-    .BlackText{
+    .FontSizeBig{
         font-size: 15px;
-        font-weight: bolder;
-        color: #616161;
+        font-weight: bold;
+    }
+    
+    .FontSizeMedium{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .FontSizeSmall{
+        font-size: 8px;
+        font-weight: bold;
     }
 
-    .CalculateBtn{
-       
-        border-radius: 5px;
-        padding: 8% 3%;
-        color: #FFF;
-        font-size: 12px;
-        font-weight: bolder;
-        width:80px;
+    /* #endregion */
     
-        
-       
+     /* #region Blocks   */
+
+.OrangeBlock{
+    border-radius: 7px;
+  }
+  .BlueBlock{
+     border-radius: 7px;
+}
+.WhiteBlock{
+     border-radius: 7px;
+}
+
+    /* #endregion */
+
+    /* #region Caclucation Block */
+
+    .CalculateBlock{
+        padding: 2%;
+        margin: 3%;
     }
-    
-    .ResetBtn{
-     
-        border-radius: 5px;
-        padding: 10% 3%;
-        color:#EFA32F;
-        font-size: 12px;
-        font-weight: bolder;
+
+    .CalculateButton{
+        padding: 10% 8%;
+        color: #FFF;
         width: 80px;
-      
-       
     }
 
-
-    .Box{
-       
-        color: #FFF;
-        border-radius: 10px;
+    .ResetButton{
+          
         padding: 1%;
-        text-align: left;
-        font-weight: bold;  
-        
-     
-        margin: 1%;
-    }
-    
-    .NumberBlock{
-        font-size: 30px;
-       text-align: left;       
-    }
-    
-    
-    
-    
-    .NameBlock{
-        font-size: 15px;
-        
-       
-    }
-
-    .MightGained{
-    
+        width: 80px;
+        color: #EFA32F;
         border-radius: 5px;
-        font-size: 12px;
-    
-        padding: 5% ;
-     
-    }
-
-  
-
-    .BlueBlock{
-        background-color: #2F4048;
-        padding: 5%;
-        margin-top: 1%;
-         border-radius: 10px;
         box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-left: 1%;
     }
 
-    .WhiteBlock{
-        background-color: #FFF;
-        padding: 5%;
-        margin-top: 1%;
-         border-radius: 10px;
-        box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-left: 1%;
-    }
+    /* #endregion */
 
 }
+
+@media (max-width: 400px){
+
+    /* #region Fonts */
+
+       .FontSizeBig{
+           font-size: 15px;
+           font-weight: bold;
+       }
+       
+       .FontSizeMedium{
+           font-size: 10px;
+           font-weight: bold;
+       }
+       
+       .FontSizeSmall{
+           font-size: 7px;
+           font-weight: bold;
+       }
+
+       /* #endregion */
+
+    /* #region Blocks   */
+
+  .OrangeBlock{
+   border-radius: 5px;
+ }
+ .BlueBlock{
+    border-radius: 5px;
+}
+.WhiteBlock{
+    border-radius: 5px;
+}
+
+/* #endregion */
+
+
+   /* #region Calculation Block */
+
+       .CalculateBlock{
+           padding: 2%;
+           margin: 3%;
+       }
+
+       .CalculateButton{
+           padding: 10% 8%;
+           color: #FFF;
+           width: 65px;
+       }
+
+       .ResetButton{
+         
+           padding: 1%;
+           width: 65px;
+           color: #EFA32F;
+           border-radius: 5px;
+           box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+
+   /* #endregion */
+
+
+   }

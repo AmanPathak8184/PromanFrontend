@@ -10,7 +10,7 @@ const Resources = function (props) {
 
             <Row>
 
-                <Col className="ResourcesButton "  xs={12} lg={2}>
+                <Col className="ResourcesButton "  xs={12} lg={12}>
                         <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.FoodAmount) / 1000000000).toFixed(2)}   BN
                         </Row>
@@ -20,7 +20,7 @@ const Resources = function (props) {
                 </Col>
 
 
-                <Col className="ResourcesButton "  xs={12} lg={2}>
+                <Col className="ResourcesButton "  xs={12} lg={12}>
                         <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.WoodAmount) / 1000000000).toFixed(2)}   BN
                         </Row>
@@ -29,7 +29,7 @@ const Resources = function (props) {
                         </Row>
                 </Col>
 
-                <Col className="ResourcesButton "  xs={12} lg={2}>
+                <Col className="ResourcesButton "  xs={12} lg={12}>
                         <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.StoneAmount) / 1000000000).toFixed(2)}   BN
                         </Row>
@@ -38,7 +38,7 @@ const Resources = function (props) {
                         </Row>
                 </Col>
 
-                <Col className="ResourcesButton "  xs={12} lg={2}>
+                <Col className="ResourcesButton "  xs={12} lg={12}>
                         <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.IronAmount) / 1000000000).toFixed(2)}   BN
                         </Row>
@@ -46,7 +46,7 @@ const Resources = function (props) {
                          Iron
                         </Row>
                 </Col>
-                <Col className="ResourcesButton "  xs={12} lg={2}>
+                <Col className="ResourcesButton "  xs={12} lg={12}>
                         <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.SilverAmount) / 1000000000).toFixed(2)}   BN
                         </Row>

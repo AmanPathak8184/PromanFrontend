@@ -419,23 +419,24 @@ class Calculator extends Component {
 
 
                 <Container fluid >
-                    <Row className="Calculate align-items-center ">
-                        <Col className="BlackText" lg={8} xs={6}>
+                  
+                    <Row className="align-items-center CalculateBlock WhiteBlock">
+                        <Col className="FontSizeBig" lg={8} xs={6}>
                             Resources Test 14
                         </Col>
                         <Col lg={2} xs={3}>
-                            <button className="CalculateBtn" onClick={() => this.CalculateHandler()}> CALCULATE </button>
+                            <button className="CalculateButton BlueBlock FontSizeMedium  " onClick={() => this.CalculateHandler()}> CALCULATE </button>
                         </Col>
                         <Col lg={2} xs={3}>
-                            <button className="ResetBtn" onClick={() => this.handleReset()}> RESET </button>
+                            <button className="ResetButton" onClick={() => this.handleReset()}> RESET </button>
                         </Col>
                     </Row>
-
+                
                     <Container fluid>
                     
                             <Row className="justify-content-between">
                          
-                                <Col xs={4}  className="WhiteBlock ">
+                                <Col xs={4}  className="WhiteBlock ResourcesBlock">
                                     <Resources
                                         FoodAmount={this.state.Food}
                                         WoodAmount={this.state.Wood}
@@ -450,20 +451,20 @@ class Calculator extends Component {
                                   
                                 <Row className="justify-content-between WhiteBlock"> 
                                      <Col className="MightGained OrangeBlock align-items-center" xs={5}> 
-                                        <Row className="justify-content-center ">
-                                         MightGained
+                                        <Row className="justify-content-center FontSize ">
+                                         Might Gained
                                         </Row>
-                                        <Row className="justify-content-center">
+                                        <Row className="justify-content-center FontSize">
                                          {this.state.MightGained} M
                                         </Row>
 
                                     </Col>
                                    
                                     <Col className="MightGained OrangeBlock align-items-center" xs={5}> 
-                                    <Row className="justify-content-center ">
+                                    <Row className="justify-content-center FontSize ">
                                          Muster Score
                                         </Row>
-                                        <Row className="justify-content-center">
+                                        <Row className="justify-content-center FontSize">
                                          {this.state.MusterScore} M
                                         </Row>
                                     </Col>
