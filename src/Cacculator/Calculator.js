@@ -419,7 +419,7 @@ class Calculator extends Component {
 
                     <Row className="align-items-center CalculateBlock WhiteBlock">
                         <Col className="FontSizeBig" lg={8} xs={6}>
-                            Resources Test 20
+                            Resources Test 21
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateButton BlueBlock FontSizeMedium  " onClick={() => this.CalculateHandler()}> CALCULATE </button>
@@ -449,7 +449,7 @@ class Calculator extends Component {
                          
                                
                                
-             <Col xs={7}>
+         <Col xs={7} >
                                   
                  <Row className="justify-content-between WhiteBlock ResultBlock"> 
 
@@ -479,10 +479,34 @@ class Calculator extends Component {
                                    
                                   
                       </Row>
+
+                        
+                 <Row className="justify-content-between WhiteBlock FactionBlock ">
+
+                        <Col className="" xs={5} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox" onChange={this.Faction1Handler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Faction 1
+                            </Row>
+                        </Col>
+
+                        <Col className="" xs={5} >
+                            <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
+                            <input type="number" className="InputBox" onChange={this.Faction2Handler.bind(this)} />
+                            </Row>
+                            <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                                Faction 2
+                            </Row>
+                        </Col>
+
+                 </Row>     
+
+             </Col>
                                 
-                 </Col>
-                                
-             </Row>
+                 </Row>
+
 
                     </Container>
                 </Container>
