@@ -69,13 +69,14 @@ padding:3%;
 }
 
 .InputBox{
-    width: 100px;
+    width: 140px;
     height: 100px;
     font-size: 50px;
     border: none;
     text-align: center;
     color: #2F4048;
-
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 /* #region Calculation Block */
@@ -225,12 +226,14 @@ padding:3%;
 }
 
 .InputBox{
-    width: 25px;
-    height: 25px;
+    width: 60px;
+    height: 40px;
     font-size: 15px;
     border: none;
     text-align: center;
     color: #2F4048;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
 }
 
@@ -309,5 +312,34 @@ padding:3%;
 }
 
 /* #endregion */
+
+/* #region Faction Block */
+
+.FactionBlock{
+
+    margin-top: 10%;
+    margin-bottom: 1%;
+    padding: 3%;
+}
+
+/* #endregion */
+
+.TroopsNameBlock{
+    margin-top: 5%;
+    color: #FFF;
+    border-radius: 2px;
+}
+
+.InputBox{
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    color: #2F4048;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
 
    }
