@@ -10,7 +10,7 @@ const Resources = function (props) {
 
             <Row>
 
-                <Col className="ResourcesButton border1"  xs={12} lg={2}>
+                <Col className="ResourcesButton "  xs={12} lg={2}>
                         <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.FoodAmount) / 1000000000).toFixed(2)}   BN
                         </Row>
@@ -20,46 +20,38 @@ const Resources = function (props) {
                 </Col>
 
 
-                <Col className="ResourcesButton"  xs={12} lg={2}>
-                        <Row>
-                            <Col  className="NumberBlock" xs={12} lg={12}>
+                <Col className="ResourcesButton "  xs={12} lg={2}>
+                        <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.WoodAmount) / 1000000000).toFixed(2)}   BN
-                            </Col >
                         </Row>
-                        <Row >
-                         <Col className="NameBlock">Wood</Col>
+                        <Row className="NameBlock justify-content-center">
+                         Wood
                         </Row>
                 </Col>
 
-                <Col className="ResourcesButton"  xs={12} lg={2}>
-                        <Row>
-                            <Col  className="NumberBlock" xs={12} lg={12}>
+                <Col className="ResourcesButton "  xs={12} lg={2}>
+                        <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.StoneAmount) / 1000000000).toFixed(2)}   BN
-                            </Col >
                         </Row>
-                        <Row >
-                         <Col className="NameBlock">Stone</Col>
+                        <Row className="NameBlock justify-content-center">
+                         Stone
                         </Row>
                 </Col>
 
-                <Col className="ResourcesButton"  xs={12} lg={2}>
-                        <Row>
-                            <Col  className="NumberBlock" xs={12} lg={12}>
+                <Col className="ResourcesButton "  xs={12} lg={2}>
+                        <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.IronAmount) / 1000000000).toFixed(2)}   BN
-                            </Col >
                         </Row>
-                        <Row >
-                         <Col className="NameBlock">Iron</Col>
+                        <Row className="NameBlock justify-content-center">
+                         Iron
                         </Row>
                 </Col>
-                <Col className="ResourcesButton"  xs={12} lg={2}>
-                        <Row>
-                            <Col  className="NumberBlock" xs={12} lg={12}>
+                <Col className="ResourcesButton "  xs={12} lg={2}>
+                        <Row className="NumberBlock  justify-content-center">
                             {parseFloat((props.SilverAmount) / 1000000000).toFixed(2)}   BN
-                            </Col >
                         </Row>
-                        <Row >
-                         <Col className="NameBlock">Silver</Col>
+                        <Row className="NameBlock justify-content-center">
+                         Silver
                         </Row>
                 </Col>
 
