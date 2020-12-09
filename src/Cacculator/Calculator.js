@@ -786,7 +786,7 @@ class Calculator extends Component {
                             </Row>
                             <Row className=" SupportBlock  align-items-center justify-content-between">
                             <Col  className="FontSizeBig SupportSubBlock  OrangeBlock" xs={12} lg={5}>
-                                Hello Although the app is completely free however if you like my work you can contribute using paypal.
+                                This App is completely free to use, however if you like my work you can contribute to my work through Paypal. Do let me know your Realm Name and Game Name in Line App.
                              </Col>
                              <Col className="FontSizeBig SupportSubBlock2 BlueBlock" xs={12} lg={5}>
                              <Paypal /> 
@@ -794,7 +794,7 @@ class Calculator extends Component {
                 </Row>
                              
             
-                <Row className="BlueBlock  FooterBlock  justify-content-between ">
+                <Row className="BlueBlock  FooterBlock  align-items-center  justify-content-between ">
                              <Col className=" SupportBlock2" xs={5} lg={5}>
                                  <Row className="FontSizeBig"> Dark Matter</Row>
                                  <Row className="FontSizeMedium"> Line ID: aman8184 </Row>
