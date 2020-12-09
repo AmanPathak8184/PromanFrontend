@@ -100,6 +100,16 @@ padding:3%;
     margin-bottom: 10%;
 }
 
+.SupportBlock{
+    padding: 1%;
+    margin-top: 1%;
+    color:#2F4048;
+}
+
+.SupportSubBlock{
+    padding: 1%;
+}
+
 /* #region Calculation Block */
 
 .CalculateBlock{

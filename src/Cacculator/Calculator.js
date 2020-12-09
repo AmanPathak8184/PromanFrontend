@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 import { Button, Col, Container, Form, FormControl, InputGroup, Jumbotron, Row, } from 'react-bootstrap';
+import Paypal from '../Paypal';
 import './Calculator.css';
 import Resources from './Resources';
 
@@ -584,7 +585,7 @@ class Calculator extends Component {
 
     <Row className="align-items-center CalculateBlock WhiteBlock">
                         <Col className="FontSizeBig" lg={8} xs={6}>
-                            Resources Test 25
+                            Resources 
                         </Col>
                         <Col lg={2} xs={3}>
                             <button className="CalculateButton BlueBlock FontSizeMedium  " onClick={() => this.CalculateHandler()}> CALCULATE </button>
@@ -776,10 +777,32 @@ class Calculator extends Component {
                             </Row>
                         </Col>
 
+                        
+
               </Row>
+                        
+              <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
+                             Support Us
+                            </Row>
+                            <Row className="WhiteBlock SupportBlock  align-items-center justify-content-center">
+                            <Col  className="FontSizeBig SupportSubBlock" xs={12} lg={6}>
+                                Hello Although the app is completely free however if you like my work you can contribute using paypal.
+                             </Col>
+                             <Col className="FontSizeBig SupportSubBlock BlueBlock" xs={12} lg={6}>
+                             <Paypal /> 
+                             </Col>
+                            </Row>
+                             
+            
+                          
+
+              
+
+            
 
               </Container>
 
+        
 
 
  </Container>
