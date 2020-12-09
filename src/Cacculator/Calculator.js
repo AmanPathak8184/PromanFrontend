@@ -622,7 +622,7 @@ class Calculator extends Component {
                                      <Col className="ResultSubBlock OrangeBlock align-items-center" xs={5}> 
 
                                <Row className="justify-content-center FontSizeBig">
-                                         {this.state.MightGained} M
+                               {(this.state.MightGained >1000) ? (this.state.MightGained/1000 + "B"):( this.state.MightGained + "M")}
                                </Row>
 
                               <Row className="justify-content-center FontSizeSmall ">
@@ -634,7 +634,9 @@ class Calculator extends Component {
                          <Col className="ResultSubBlock OrangeBlock align-items-center" xs={5}> 
 
                                <Row className="justify-content-center FontSizeBig">
-                                         {this.state.MusterScore} M
+                                   
+
+                                         {(this.state.MusterScore >1000) ? (this.state.MusterScore/1000 + "B"):( this.state.MusterScore + "M")}
                                </Row>
 
                               <Row className="justify-content-center FontSizeSmall ">
@@ -687,7 +689,7 @@ class Calculator extends Component {
                 
                 <Col className="" xs={2} >
                             <Row className="OrangeBlock ResultSubBlock align-items-center justify-content-center ">
-                            <input type="number" className="InputBox2" onChange={this.SwordmanT1ChangeHandler.bind(this)} />
+                            <input type="number"   className="InputBox2" onChange={this.SwordmanT1ChangeHandler.bind(this)} />
                             </Row>
                             <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
                                 Swords
