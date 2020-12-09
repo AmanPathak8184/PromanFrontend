@@ -784,17 +784,29 @@ class Calculator extends Component {
               <Row className="BlueBlock TroopsNameBlock FontSizeMedium  align-items-center justify-content-center ">
                              Support Us
                             </Row>
-                            <Row className="WhiteBlock SupportBlock  align-items-center justify-content-center">
-                            <Col  className="FontSizeBig SupportSubBlock" xs={12} lg={6}>
+                            <Row className=" SupportBlock  align-items-center justify-content-between">
+                            <Col  className="FontSizeBig SupportSubBlock  OrangeBlock" xs={12} lg={5}>
                                 Hello Although the app is completely free however if you like my work you can contribute using paypal.
                              </Col>
-                             <Col className="FontSizeBig SupportSubBlock BlueBlock" xs={12} lg={6}>
+                             <Col className="FontSizeBig SupportSubBlock2 BlueBlock" xs={12} lg={5}>
                              <Paypal /> 
                              </Col>
-                            </Row>
+                </Row>
                              
             
+                <Row className="BlueBlock  FooterBlock  justify-content-between ">
+                             <Col className=" SupportBlock2" xs={5} lg={5}>
+                                 <Row className="FontSizeBig"> Dark Matter</Row>
+                                 <Row className="FontSizeMedium"> Line ID: aman8184 </Row>
+                                 <Row className="FontSizeSmall"> You can contact me in the above line adress if you 
+                                 want any assistance regarding game. I play in Realm -68 Asia Server in Logarithm Alliance. </Row>
+                             </Col>
+                             <Col className=" SupportBlock2"  xs={5} lg={5}>
+                             <Row className="FontSizeBig"> FOLLOW ME</Row>
                           
+                             <a href="https://www.youtube.com/channel/UCkavhoaafh1fZzpn_MKuyAA/videos?view_as=subscriber" className="WhiteColor">Youtube</a>
+                             </Col>
+                 </Row>    
 
               
 
