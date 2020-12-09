@@ -9,7 +9,7 @@ import './Paypal.css';
 
 const Paypal = function () {
 
-    const [amount, setAmount] = useState(2);
+    const [amount, setAmount] = useState(5);
     const [orderID, setOrderID] = useState(false);
 
     function createOrder(data, actions) {
